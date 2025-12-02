@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TYO FRM</title>
+
+  <!-- Logo & favicon -->
+  <link rel="icon"
+        href="https://taiyouth.org/wp-content/uploads/2023/03/android-chrome-512x512-1.png"
+        type="image/png" />
+  <link rel="preload"
+        href="https://taiyouth.org/wp-content/uploads/2023/03/android-chrome-512x512-1.png"
+        as="image" />
+  <link rel="stylesheet" href="./styles/main.css" />
+</head>
+<body>
+  <header class="site-header">
+    <img src="https://taiyouth.org/wp-content/uploads/2023/03/android-chrome-512x512-1.png"
+         alt="Better 2.0 logo"
+         class="logo" />
+    <h1>TYO FRM</h1>
+    <nav class="lang-switch" aria-label="Language">
+      <button data-lang="en">EN</button>
+      <button data-lang="my">MY</button>
+      <button data-lang="shn">SHN</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="intro" class="card">
+      <h2 data-i18n="intro_title">Welcome</h2>
+      <p data-i18n="intro_body">Anonymous, secure, and accessible feedback—crafted with care.</p>
+    </section>
+
+    <section id="form" class="card">
+      <h2 data-i18n="form_title">Submit feedback</h2>
+      <!-- Formspree endpoint wired in -->
+      <form id="feedbackForm"
+            action="https://formspree.io/f/manpzbyr"
+            method="POST"
+            novalidate>
+        <label for="message" data-i18n="form_label">Your message</label>
+        <textarea id="message"
+                  name="message"
+                  maxlength="2000"
+                  aria-label="Message"></textarea>
+
+        <div class="actions">
+          <button type="submit" class="primary" data-i18n="form_submit">Submit</button>
+          <button type="reset" class="secondary" data-i18n="form_reset">Reset</button>
+        </div>
+      </form>
+      <p id="status" role="status" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer>
+    <small>&copy; 2025 Odysseus — MIT License</small>
+  </footer>
+
+  <script src="./scripts/app.js" defer></script>
+</body>
+</html>
