@@ -1,0 +1,11 @@
+{
+  "intro_title": "Welcome",
+  "intro_body": "Anonymous, secure, and accessible feedback—crafted with care.",
+  "form_title": "Submit feedback",
+  "form_label": "Your message",
+  "form_submit": "Submit",
+  "form_reset": "Reset",
+  "status_success": "Feedback submitted successfully!",
+  "status_error": "Submission failed. Please try again.",
+  "status_empty": "Please enter a message."
+}
